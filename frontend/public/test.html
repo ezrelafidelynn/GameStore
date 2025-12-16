@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameStore Test</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 2rem;
+        background-color: #1e293b;
+        color: white;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      .status {
+        background-color: #10b981;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎮 GameStore Static Test</h1>
+    <p>If you can see this page, the web server is working correctly.</p>
+    <p>This is a static HTML file to test server connectivity.</p>
+
+    <div class="status">
+      <strong>✅ Server Status: Working</strong>
+      <br />Current time: <span id="time"></span>
+    </div>
+
+    <script>
+      document.getElementById("time").textContent =
+        new Date().toLocaleTimeString();
+      console.log("Static test page loaded successfully!");
+    </script>
+  </body>
+</html>
